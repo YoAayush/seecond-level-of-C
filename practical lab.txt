@@ -1,0 +1,7 @@
+1. write a program to create a class rectangle having data members length , breadth members function area , parameter.
+
+2.create a class student having data memebers as ID,name,marks in five subjects , two member function , get data, show result.
+
+3. create a class simple interest having data members principle amount, rate and time and a function show interest that displays the simple interest.
+
+4.WAP to create a class matrix which contains two 2*2 matrix create member function that accepts the matrix, displays sum of 2 matrix, displays the transpose of two matrix.

@@ -1,0 +1,3 @@
+1. create a class person having data members as name and address. member function is void accept. create a subclass student having data members roll no. and marks in five subjects. one member function for accepting roll no. and marks in five subjects . second member function of student class will display all the details and the average marks. 
+
+2. create two base classes i) worker(data members - worker id , worker department , float salary) , ii) officer(data members - DA and Hra). create a derived class called manager from both these base classes. manager has two data members - TA = 0.1*sal ,gross salary = sal + ta + da + hra. implement the assume the necessary member functions.
