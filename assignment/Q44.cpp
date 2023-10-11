@@ -52,7 +52,7 @@ int main(){
     int n;
     cout<<"How many students do you want to create a database for ? ";
     cin>>n;
-    exam* obj = new exam[n];
+    exam obj[n];
     for(int i=0; i<n; i++){
         obj[i].person_data();
         obj[i].get_student_id();
