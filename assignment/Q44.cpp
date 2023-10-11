@@ -2,34 +2,66 @@
 using namespace std;
 class person{
     protected:
-    char name[100];
+    string name;
     int age;
 
     public:
-    void person_detail(){
-        cout<<"Name: ";
-        gets(name);
-        cout<<"Age: ";
+    void person_data(){
+        cout<<"enter student name: ";
+        cin>>name;
+        cout<<"enter age: ";
         cin>>age;
     }
 };
 
 class student:public person{
     protected:
-    int stu_id;
+    long int student_id;
 
     public:
-    void get_id(){
+    void get_student_id(){
         cout<<"enter student id: ";
-        cin>>stu_id;
-    }
-    void show_data(){
-        cout<<"Student Name: "<<name<<endl;
-        cout<<"Student Age: "<<age<<endl;
-        cout<<"Student ID: "<<stu_id<<endl;
+        cin>>student_id;
     }
 };
 
 class exam:public student{
-    
+    protected:
+    string subject;
+    float marks;
+
+    public:
+    void get_subject_detail(){
+        cout<<"enter subject name: ";
+        cin>>subject;
+        cout<<"enter marks: ";
+        cin>>marks;
+    }
+
+    void display_all_data(){
+        cout<<"Name: "<<name<<endl;
+        cout<<"Age: "<<age<<endl;
+        cout<<"Student ID: "<<student_id<<endl;
+        cout<<"Subject: "<<subject<<endl;
+        cout<<"Marks: "<<marks<<endl;
+    }
 };
+
+int main(){
+    int n;
+    cout<<"How many students do you want to create a database for ? ";
+    cin>>n;
+    exam* obj = new exam[n];
+    for(int i=0; i<n; i++){
+        obj[i].person_data();
+        obj[i].get_student_id();
+        obj[i].get_subject_detail();
+    }
+
+    //displaying data.
+    for(int j=0; j<n; j++){
+        obj[j].display_all_data();
+    }
+
+return 0;
+}
