@@ -44,6 +44,7 @@ class exam:public student{
         cout<<"Student ID: "<<student_id<<endl;
         cout<<"Subject: "<<subject<<endl;
         cout<<"Marks: "<<marks<<endl;
+        cout<<endl;
     }
 };
 
